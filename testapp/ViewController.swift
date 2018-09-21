@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var clmx: UITextField!
+    
+    @IBAction func hello(_ sender: Any) {
+        clmx.text = "hello world"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
