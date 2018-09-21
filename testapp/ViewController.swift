@@ -10,10 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textb: UITextField!
+    @IBOutlet weak var texta: UITextField!
     @IBOutlet weak var clmx: UITextField!
+    
+    @IBOutlet weak var clmx2: UITextField!
     
     @IBAction func hello(_ sender: Any) {
         clmx.text = "hello world"
+    }
+    
+    @IBAction func aaddb(_ sender: Any) {
+        clmx2.text = "\(Int(texta.text!)! + Int(textb.text!)!)"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
